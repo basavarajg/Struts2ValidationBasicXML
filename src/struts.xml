@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<package name="Struts2Validation" extends="struts-default"
+		namespace="/">
+		<action name="doLogin" class="net.codejava.struts.LoginAction">
+			<result name="success" type="redirect">/LoginSuccess.jsp</result>
+			<result name="input">/LoginForm.jsp</result>
+		</action>
+		<action name="register" class="net.codejava.struts.RegisterAction">
+			<result name="input">index.jsp</result>
+			<result>welcome.jsp</result>
+		</action>
+	</package>
+
+</struts>
